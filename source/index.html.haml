@@ -1,0 +1,26 @@
+.container
+  .jumbotron
+    %h1 No Resume for the Wicked!
+
+    .progress
+      .progress-bar.progress-bar-success{:style => "width: 45%"}
+      .progress-bar.progress-bar-warning{:style => "width: 35%"}
+      .progress-bar.progress-bar-danger{:style => "width: 20%"}
+
+  %h2 Intro
+  %p
+    %img{:alt => "Me", :src => "/images/avatar.jpg", :style => "float:left;width:304px;height:304px;"}/
+
+    %p.ex
+      Hi!
+      %br/
+      I am
+      %strong Adil
+      and this is my first encounter with static page generators. You really don't want to inspect this page, you'll be horrified. For less horrifying stuff follow me on Twitter
+      %a{:href => "https://twitter.com/adilsylqa", :target => "_blank"} here
+
+    %p.ex I am a totally random guy and there is no reason to waste your time checking on my profile but if you really want to, click Next below
+
+    %ul.pager
+      %li
+        %a{:href => "\intro.html"} Next
