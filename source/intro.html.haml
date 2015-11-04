@@ -1,3 +1,31 @@
+%nav.navbar.navbar-default
+  .container-fluid
+    .navbar-header
+      %button.navbar-toggle.collapsed{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand{:href => "/index.html"} Home
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      %ul.nav.navbar-nav
+        %li.active
+          %a{:href => "https://github.com/a-dilla/resume_page", :target => "_blank"}
+            Fork on GitHub
+            %span.sr-only (current)
+        %li
+          %a{:href => "https://www.youtube.com/watch?v=Kbx6d3R8QRE", :target => "_blank"} Cool Youtube Song
+
+      %form.navbar-form.navbar-left{:role => "search"}
+        .form-group
+          %input.form-control{:placeholder => "Search", :type => "text"}/
+        %button.btn.btn-default{:type => "submit"} Submit
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          %a{:href => "http://herecomesyrman.tumblr.com/", :target => "_blank"} Film Blog
+        %li
+          %a{:href => "https://twitter.com/adilsylqa", :target => "_blank"} Twitter
+
 .container
   .jumbotron
     %h1 No Resume for the Wicked!
